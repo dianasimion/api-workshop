@@ -15,7 +15,7 @@ class Movie {
     return Movie(
       title: json['title'],
       year: json['year'],
-      rating: json['rating'],
+      rating: json['rating'] * 1.0,
       imageUrl: json['medium_cover_image'],
     );
   }
